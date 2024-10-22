@@ -11,6 +11,7 @@ public class Ajio {
 	  WebDriver driver = new EdgeDriver();
 	  driver.get("https://www.ajio.com/");
 	  driver.manage().window().maximize();
+	  driver.manage().deleteAllCookies();
 	  Thread.sleep(2000);
 	  driver.close();
 	  }
